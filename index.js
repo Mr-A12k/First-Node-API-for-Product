@@ -75,7 +75,7 @@ app.delete('/api/product/:id', async(req,res)=>{
         res.status(404).json({message:"Product not found!"});
     }   
 })
-
+//database connection
 mongoose.connect("mongodb://localhost:27017/Kabix",{useNewUrlParser:true,useUnifiedTopology:true})
     .then(() => {
         console.log("Sucessfully connected");
